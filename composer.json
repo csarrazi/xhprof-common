@@ -1,6 +1,6 @@
 {
-    "name": "csa/xhprof-persister",
-    "description": "A small abstraction in front of the xhprof extension, with storage support",
+    "name": "csa/xhprof-common",
+    "description": "Common classes for the csa/xhprof-* libraries",
     "license": "MIT",
     "authors": [
         {
@@ -12,8 +12,7 @@
         "psr-4": { "XhProf\\": "src/" }
     },
     "require": {
-        "php": ">=5.3.3",
-        "ext-xhprof": "*"
+        "php": ">=5.3.3"
     },
     "minimum-stability": "dev",
     "extra": {
@@ -22,6 +21,8 @@
         }
     },
     "suggest": {
-        "csa/xhprof-grapher": "Allows creating a callgraph from a trace"
+        "csa/xhprof-grapher": "Allows creating a callgraph from a trace",
+        "csa/xhprof-profiler": "Allows profiling and sampling of a PHP application",
+        "csa/xhprof-persister": "Allows the persistance of traces"
     }
 }
